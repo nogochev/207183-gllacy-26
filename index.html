@@ -3,9 +3,91 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <header class="main-header container">
+      <nav class="main-nav">
+        <a class="gllacy-logo" href="index.html">
+          <img src="img/gllacy-logo.svg" width="154" height="64" alt="Логотип магазина Gllacy">
+        </a>
+        <ul class="site-nav">
+          <li class="site-nav-item">
+            <ul class="sub-menu">
+              <li class="sub-menu-item">
+                <a href="">Новинки</a>
+                <hr>
+              </li>
+              <li class="sub-menu-item">
+                <a href="">Сливочное</a>
+              </li>
+              <li class="sub-menu-item">
+                <a href="">Щербеты</a>
+              </li>
+              <li class="sub-menu-item">
+                <a href="">Фруктовый лед</a>
+              </li>
+              <li class="sub-menu-item">
+                <a href="">Мелорин</a>
+              </li>
+            </ul>
+            <a href="https://yandex.ru">Каталог</a>
+          </li>
+          <li class="site-nav-item">
+            <a href="#">Доставка и оплата</a>
+          </li>
+          <li class="site-nav-item">
+            <a href="#">О Компании</a>
+          </li>
+        </ul>
 
+        <ul class="user-nav">
+          <li class="user-nav-item search-item">
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
+              <p class="search-wrapper">
+                <label for="search-form"><span class="visually-hidden">Поиск</span></label>
+                <input type="search" name="search" id="search-form" placeholder="Крем-брюле">
+              </p>
+              <button class="search-button" type="submit">Найти</button>
+            </form>
+          </li>
+
+          <li class="user-nav-item login-item">
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
+              <div class="login-form-wrapper">
+                <p class="login-form-field">
+                  <label class="visually-hidden" for="email-field">Ваш email:</label>
+                  <input type="email" name="email" id="email-field" placeholder="email@example.com">
+                </p>
+                <p class="login-form-field">
+                  <label class="visually-hidden" for="password-field">Ваш пароль:</label>
+                  <input type="password" name="password" id="password-field" placeholder="••••••••">
+                </p>
+                <button class="button login-form-button" type="submit">Войти</button>
+                <ul class="login-form-help">
+                  <li class="help-item">
+                    <a class="restore-password" href="">Забыли пароль?</a>
+                  </li>
+                  <li class="help-item">
+                    <a class="sign-up" href="">Новая регистрация</a>
+                  </li>
+                </ul>
+              </div>
+            </form>
+            <a class="user-link user-link--login" href="">Вход</a>
+          </li>
+
+          <li class="user-nav-item cart-item">
+            <a class="user-link user-link--cart" href="">Пусто</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="working-hours">
+        <h2 class="visually-hidden">Время работы магазина и контактный телефон</h2>
+        <p>С 10 до 20, ежедневно</p>
+        <p><a href="tel:+78124502525" aria-label="Телефон для связи">8 812 450-25-25</a></p>
+      </section>
+    </header>
   </body>
 </html>
