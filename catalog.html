@@ -2,25 +2,25 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Главная</title>
+    <title>Каталог</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header container">
       <nav class="main-nav">
-        <a class="gllacy-logo">
+        <a class="gllacy-logo" href="index.html">
           <img src="img/gllacy-logo.svg" width="154" height="64" alt="Логотип магазина Gllacy">
         </a>
         <ul class="site-nav">
-          <li class="site-nav-item">
+          <li class="site-nav-item site-nav-item--current">
             <ul class="sub-menu">
               <li class="sub-menu-item">
                 <a href="">Новинки</a>
                 <hr>
               </li>
-              <li class="sub-menu-item">
-                <a href="catalog.html">Сливочное</a>
+              <li class="sub-menu-item sub-menu-item--current">
+                <a>Сливочное</a>
               </li>
               <li class="sub-menu-item">
                 <a href="">Щербеты</a>
@@ -32,7 +32,7 @@
                 <a href="">Мелорин</a>
               </li>
             </ul>
-            <a href="catalog.html">Каталог</a>
+            <a href="">Каталог</a>
           </li>
           <li class="site-nav-item">
             <a href="#">Доставка и оплата</a>
@@ -54,6 +54,7 @@
           </li>
 
           <li class="user-nav-item login-item">
+            <a class="user-link user-link--login" href="">Вход</a>
             <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
               <div class="login-form-wrapper">
                 <p class="login-form-field">
@@ -75,11 +76,52 @@
                 </ul>
               </div>
             </form>
-            <a class="user-link user-link--login" href="">Вход</a>
           </li>
 
           <li class="user-nav-item cart-item">
-            <a class="user-link user-link--cart" href="">Пусто</a>
+            <div class="cart-item-wrapper">
+              <table class="cart-popup-table">
+                <tr class="cart-popup-row row-1">
+                  <td class="cart-popup-cell cell-1">
+                    <button class="cart-delete-product"><span class="visually-hidden">X</span></button>
+                  </td>
+                  <td class="cart-popup-cell cell-2">
+                    <img src="img/product-photo-1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                  </td>
+                  <td class="cart-popup-cell cell-3">
+                    Пломбир с апельсиновым джемом
+                  </td>
+                  <td class="cart-popup-cell cell-4">
+                    1,5 кг х <span>200 руб.</span>
+                  </td>
+                  <td class="cart-popup-cell cell-5">
+                    300 руб.
+                  </td>
+                </tr>
+
+                <tr class="cart-popup-row row-2">
+                  <td class="cart-popup-cell cell-1">
+                    <button class="cart-delete-product"><span class="visually-hidden">X</span></button>
+                  </td>
+                  <td class="cart-popup-cell cell-2">
+                    <img src="img/product-photo-3.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                  </td>
+                  <td class="cart-popup-cell cell-3">
+                    Клубничный пломбир с присыпкой из белого шоколада
+                  </td>
+                  <td class="cart-popup-cell cell-4">
+                    1,5 кг х <span>300 руб.</span>
+                  </td>
+                  <td class="cart-popup-cell cell-5">
+                    450 руб.
+                  </td>
+                </tr>
+              </table>
+              <hr>
+              <p class="cart-sum-total">Итого: 750 руб.</p>
+              <a class="button cart-popup-button" href="">Оформить заказ</a>
+            </div>
+            <a class="user-link user-link--cart cart-with-goods" href="">2 товара</a>
           </li>
         </ul>
       </nav>
