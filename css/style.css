@@ -623,8 +623,6 @@ input[type="search"]::placeholder,
   position: absolute;
   top: 33px;
   right: 0;
-  /* display: flex; */
-  flex-direction: column;
   width: 540px;
   padding: 5px;
   padding-bottom: 21px;
@@ -634,16 +632,9 @@ input[type="search"]::placeholder,
   display: none;
 }
 
-.cart-item-wrapper hr {
-  width: calc(100% - 20px);
-  height: 1px;
-  background-color: #cacac7;
-  border: none;
-}
-
 .cart-popup-table {
   width: 100%;
-  margin-bottom: 7px;
+  margin-bottom: 15px;
   background-color: #f8f7f4;
   border-collapse: collapse;
 }
@@ -657,9 +648,10 @@ input[type="search"]::placeholder,
 }
 
 .cell-1 {
-  position: relative;
   width: 36px;
-  text-align: center;
+  /* text-align: center; */
+  padding-top: 24px;
+  padding-left: 5px;
 }
 
 .cell-2 {
@@ -692,43 +684,46 @@ input[type="search"]::placeholder,
 }
 
 .cart-delete-product {
-  position: relative;
-  top: 22px;
-  right: 1px;
-  display: inline-block;
-  width: 11px;
-  height: 11px;
   background-color: transparent;
-  background-image: url("../img/cart-icon-delete-product.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
   border: none;
   cursor: pointer;
 }
 
-.cart-sum-total {
-  align-self: flex-end;
+.cart-popup-table hr {
+  width: calc(100% - 18px);
+  height: 1px;
+  background-color: #cacac7;
+  border: none;
+}
 
-  margin: 0;
-  margin-top: 5px;
-  margin-bottom: 15px;
+.cart-popup-cell--hr {
+  padding-top: 9px;
+}
 
-  padding: 0;
-  padding-right: 8px;
+.cell-total-sum  {
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
-  color: #323232;
+  text-align: right;
+  padding: 0;
+  padding-top: 5px;
+  padding-right: 8px;
+}
+
+.cart-item-wrapper p {
+  margin: 0;
+  padding-right: 10px;
+  text-align: right;
 }
 
 .cart-popup-button {
   align-self: flex-end;
-  margin-right: 10px;
+  margin-right: auto;
   padding: 8px 14px 12px 14px;
 }
 
 .cart-item:hover .cart-item-wrapper {
-  display: flex;
+  display: block;
 }
 
 

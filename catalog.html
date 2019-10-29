@@ -81,9 +81,11 @@
           <li class="user-nav-item cart-item">
             <div class="cart-item-wrapper">
               <table class="cart-popup-table">
-                <tr class="cart-popup-row row-1">
+                <tr class="cart-popup-row">
                   <td class="cart-popup-cell cell-1">
-                    <button class="cart-delete-product"><span class="visually-hidden">X</span></button>
+                    <button class="cart-delete-product" type="button">
+                      <img src="img/cart-icon-delete-product.svg" width="11" height="11" alt="Удалить товар из корзины">
+                    </button>
                   </td>
                   <td class="cart-popup-cell cell-2">
                     <img src="img/product-photo-1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
@@ -99,9 +101,11 @@
                   </td>
                 </tr>
 
-                <tr class="cart-popup-row row-2">
+                <tr class="cart-popup-row">
                   <td class="cart-popup-cell cell-1">
-                    <button class="cart-delete-product"><span class="visually-hidden">X</span></button>
+                    <button class="cart-delete-product" type="button">
+                      <img src="img/cart-icon-delete-product.svg" width="11" height="11" alt="Удалить товар из корзины">
+                    </button>
                   </td>
                   <td class="cart-popup-cell cell-2">
                     <img src="img/product-photo-3.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
@@ -116,10 +120,22 @@
                     450 руб.
                   </td>
                 </tr>
+
+                <tr class="cart-popup-row">
+                  <td class="cart-popup-cell cart-popup-cell--hr" colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+
+                <tr class="cart-popup-row">
+                  <td class="cart-popup-cell cell-total-sum" colspan="5">
+                    Итого: 750 руб.
+                  </td>
+                </tr>
               </table>
-              <hr>
-              <p class="cart-sum-total">Итого: 750 руб.</p>
-              <a class="button cart-popup-button" href="">Оформить заказ</a>
+              <p>
+                <a class="button cart-popup-button" href="">Оформить заказ</a>
+              </p>
             </div>
             <a class="user-link user-link--cart cart-with-goods" href="">2 товара</a>
           </li>
