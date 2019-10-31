@@ -7,87 +7,138 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header container">
-      <nav class="main-nav">
-        <a class="gllacy-logo">
-          <img src="img/gllacy-logo.svg" width="154" height="64" alt="Логотип магазина Gllacy">
-        </a>
-        <ul class="site-nav">
-          <li class="site-nav-item">
-            <ul class="sub-menu">
-              <li class="sub-menu-item">
-                <a href="">Новинки</a>
-                <hr>
-              </li>
-              <li class="sub-menu-item">
-                <a href="catalog.html">Сливочное</a>
-              </li>
-              <li class="sub-menu-item">
-                <a href="">Щербеты</a>
-              </li>
-              <li class="sub-menu-item">
-                <a href="">Фруктовый лед</a>
-              </li>
-              <li class="sub-menu-item">
-                <a href="">Мелорин</a>
-              </li>
-            </ul>
-            <a href="catalog.html">Каталог</a>
-          </li>
-          <li class="site-nav-item">
-            <a href="#">Доставка и оплата</a>
-          </li>
-          <li class="site-nav-item">
-            <a href="#">О Компании</a>
-          </li>
-        </ul>
+    <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+    <div class="site-wrapper">
+      <header class="main-header container">
+        <nav class="main-nav">
+          <a class="gllacy-logo">
+            <img src="img/gllacy-logo.svg" width="154" height="64" alt="Логотип магазина Gllacy">
+          </a>
+          <ul class="site-nav">
+            <li class="site-nav-item">
+              <ul class="sub-menu">
+                <li class="sub-menu-item">
+                  <a href="">Новинки</a>
+                  <hr>
+                </li>
+                <li class="sub-menu-item">
+                  <a href="catalog.html">Сливочное</a>
+                </li>
+                <li class="sub-menu-item">
+                  <a href="">Щербеты</a>
+                </li>
+                <li class="sub-menu-item">
+                  <a href="">Фруктовый лед</a>
+                </li>
+                <li class="sub-menu-item">
+                  <a href="">Мелорин</a>
+                </li>
+              </ul>
+              <a href="catalog.html">Каталог</a>
+            </li>
+            <li class="site-nav-item">
+              <a href="#">Доставка и оплата</a>
+            </li>
+            <li class="site-nav-item">
+              <a href="#">О Компании</a>
+            </li>
+          </ul>
 
-        <ul class="user-nav">
-          <li class="user-nav-item search-item">
-            <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
-              <p class="search-wrapper">
-                <label for="search-form"><span class="visually-hidden">Поиск</span></label>
-                <input type="search" name="search" id="search-form" placeholder="Крем-брюле">
-              </p>
-              <button class="search-button" type="submit">Найти</button>
-            </form>
-          </li>
-
-          <li class="user-nav-item login-item">
-            <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
-              <div class="login-form-wrapper">
-                <p class="login-form-field">
-                  <label for="email-field"><span class="visually-hidden">Ваш email:</span></label>
-                  <input type="email" name="email" id="email-field" placeholder="email@example.com">
+          <ul class="user-nav">
+            <li class="user-nav-item search-item">
+              <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
+                <p class="search-wrapper">
+                  <label for="search-form"><span class="visually-hidden">Поиск</span></label>
+                  <input type="search" name="search" id="search-form" placeholder="Крем-брюле">
                 </p>
-                <p class="login-form-field">
-                  <label class="visually-hidden" for="password-field"><span class="visually-hidden">Ваш пароль:</span></label>
-                  <input type="password" name="password" id="password-field" placeholder="••••••••">
-                </p>
-                <button class="button login-form-button" type="submit">Войти</button>
-                <ul class="login-form-help">
-                  <li class="help-item">
-                    <a class="restore-password" href="">Забыли пароль?</a>
-                  </li>
-                  <li class="help-item">
-                    <a class="sign-up" href="">Новая регистрация</a>
-                  </li>
-                </ul>
-              </div>
-            </form>
-            <a class="user-link user-link--login" href="">Вход</a>
-          </li>
+                <button class="search-button" type="submit">Найти</button>
+              </form>
+            </li>
 
-          <li class="user-nav-item cart-item">
-            <a class="user-link user-link--cart" href="">Пусто</a>
-          </li>
-        </ul>
-      </nav>
-      <section class="working-hours">
-        <h2 class="visually-hidden">Время работы магазина и контактный телефон</h2>
-        <p>С 10 до 20, ежедневно</p>
-        <p><a href="tel:+78124502525" aria-label="Телефон для связи">8 812 450-25-25</a></p>
-      </section>
-    </header>
+            <li class="user-nav-item login-item">
+              <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
+                <div class="login-form-wrapper">
+                  <p class="login-form-field">
+                    <label for="email-field"><span class="visually-hidden">Ваш email:</span></label>
+                    <input type="email" name="email" id="email-field" placeholder="email@example.com">
+                  </p>
+                  <p class="login-form-field">
+                    <label class="visually-hidden" for="password-field"><span class="visually-hidden">Ваш пароль:</span></label>
+                    <input type="password" name="password" id="password-field" placeholder="••••••••">
+                  </p>
+                  <button class="button login-form-button" type="submit">Войти</button>
+                  <ul class="login-form-help">
+                    <li class="help-item">
+                      <a class="restore-password" href="">Забыли пароль?</a>
+                    </li>
+                    <li class="help-item">
+                      <a class="sign-up" href="">Новая регистрация</a>
+                    </li>
+                  </ul>
+                </div>
+              </form>
+              <a class="user-link user-link--login" href="">Вход</a>
+            </li>
+
+            <li class="user-nav-item cart-item">
+              <a class="user-link user-link--cart" href="">Пусто</a>
+            </li>
+          </ul>
+        </nav>
+        <section class="working-hours">
+          <h2 class="visually-hidden">Время работы магазина и контактный телефон</h2>
+          <p>С 10 до 20, ежедневно</p>
+          <p><a href="tel:+78124502525" aria-label="Телефон для связи">8 812 450-25-25</a></p>
+        </section>
+
+        <section class="slider">
+          <div class="slider-controls">
+            <label for="product-1">Первый</label>
+            <label for="product-2">Второй</label>
+            <label for="product-3">Третий</label>
+          </div>
+          <ul class="slider-list">
+            <li class="slider-item slide" id="slide-1">
+              <h3 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h3>
+              <a class="button slide-button" href="">Давайте оба!</a>
+            </li>
+
+            <li class="slider-item slide" id="slide-2">
+              <h3 class="slide-title">Шоколадный пломбир и лимонный сорбет </h3>
+              <a class="button slide-button" href="">Давайте оба!</a>
+            </li>
+
+            <li class="slider-item slide" id="slide-3">
+              <h3 class="slide-title">Пломбир с помадкой и клубничный щербет</h3>
+              <a class="button slide-button" href="">Давайте оба!</a>
+            </li>
+          </ul>
+        </section>
+      </header>
+
+       <main class="container">
+        <h1 class="visually-hidden">Магазин мороженого «Глейси»</h1>
+        <div class="index-columns promotions-block">
+          <h2 class="visually-hidden">Промоакции магазина «Глейси»</h2>
+          <section class="promotion promotion-1">
+            <h3>Малинка даром!</h3>
+            <p>
+              При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
+            </p>
+            <a class="button promotion-button" href="">Хочу варенье!</a>
+          </section>
+
+          <section class="promotion promotion-2">
+            <h3>Шоколадки даром!</h3>
+            <p>
+              При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
+            </p>
+            <a class="button promotion-button" href="">Хочу шоколадки!</a>
+          </section>
+        </div>
+      </main>
+    </div>
   </body>
 </html>
