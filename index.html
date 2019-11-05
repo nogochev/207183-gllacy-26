@@ -122,7 +122,7 @@
         <h1 class="visually-hidden">Магазин мороженого «Глейси»</h1>
         <div class="index-columns promotions-block container">
           <h2 class="visually-hidden">Промоакции магазина «Глейси»</h2>
-          <section class="promotion promotion-1">
+          <section class="column promotion promotion-1">
             <h3>Малинка даром!</h3>
             <p>
               При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
@@ -130,7 +130,7 @@
             <a class="button promotion-button" href="">Хочу варенье!</a>
           </section>
 
-          <section class="promotion promotion-2">
+          <section class="column promotion promotion-2">
             <h3>Шоколадки даром!</h3>
             <p>
               При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
@@ -216,8 +216,87 @@
               </li>
             </ul>
           </section>
+
+          <div class="index-columns news-subscription">
+            <h2 class="visually-hidden">Промоакции магазина «Глейси»</h2>
+            <section class="column news-blog">
+              <b>Новое в нашем блоге</b>
+              <h3 class="news-title">
+                <a href="">10 способов сервировки фруктовых щербетов к столу</a>
+              </h3>
+            </section>
+
+            <section class="column subscription">
+              <h3 class="visually-hidden">Подписка на рассылку</h3>
+              <div class="subscription-wrapper">
+                <p>
+                  Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+                </p>
+                <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="POST">
+                  <label class="visually-hidden" for="subscribe-email">Введите ваш email для получения новостей:</label>
+                  <input type="email" name="subscribe-email" id="subscribe-email" placeholder="email@example.com">
+                  <button class="button subscribe-form-button" type="submit">Отправить</button>
+                </form>
+              </div>
+            </section>
+          </div>
         </div>
+
+        <section class="map">
+          <h2 class="visually-hidden">Как до нас добраться</h2>
+           <div class="map-static container">
+            <img src="img/map.jpg" height="430" alt="Адрес главного офиса и офлайн-магазина ул. Большая Конюшенная 19/8, Санкт-Петербург">
+            <div class="contacts-info">
+              <p>Адрес главного офиса и офлайн-магазина:</p>
+              <p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+
+              <p>Для заказов по телефону:</p>
+              <a href="tel:+78124502525" aria-label="Телефон для связи">8 812 450-25-25</a>
+              <p>(с 10 до 20 ежедневно)</p>
+              <button class="button contacts-info-button" type="button">Форма обратной связи</button>
+            </div>
+           </div>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.58775395639!2d30.326748847207874!3d59.93898251128873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1572864182894!5m2!1sru!2sru" width="100%" height="430" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </section>
       </main>
+
+      <footer class="main-footer">
+        <div class="container">
+          <ul class="footer-social">
+            <li>
+              <a class="social-button social-button--twitter" href=""><span class="visually-hidden">Твиттер</span></a>
+            </li>
+            <li>
+              <a class="social-button social-button--instagram" href=""><span class="visually-hidden">Инстаграм</span></a>
+            </li>
+            <li>
+              <a class="social-button social-button--facebook" href=""><span class="visually-hidden">Фейсбук</span></a>
+            </li>
+            <li>
+              <a class="social-button social-button--vkontakte" href=""><span class="visually-hidden">Вконтакте</span></a>
+            </li>
+          </ul>
+
+          <ul class="footer-info">
+            <li class="footer-info-item">
+              <a class="footer-info-link footer-info-link--bold" href="">Для поставщиков</a>
+              <a class="footer-info-link" href="">О производстве</a>
+            </li>
+
+            <li class="footer-info-item">
+              <a class="footer-info-link" href="">Наши документы</a>
+              <a class="footer-info-link" href="">Экологические стандарты</a>
+            </li>
+          </ul>
+
+          <div class="footer-copyright">
+            <a href="">
+              <img src="img/logo-htmlacademy.svg" width="108" height="37" alt="Логотип HTML Academy">
+            </a>
+            <p>Сделано в <a href="">HTML Academy</a> &#169; 2019</p>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
