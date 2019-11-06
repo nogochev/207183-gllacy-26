@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Главная</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
@@ -290,13 +290,37 @@
           </ul>
 
           <div class="footer-copyright">
-            <a href="">
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
               <img src="img/logo-htmlacademy.svg" width="108" height="37" alt="Логотип HTML Academy">
             </a>
-            <p>Сделано в <a href="">HTML Academy</a> &#169; 2019</p>
+            <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &#169; 2019</p>
           </div>
         </div>
       </footer>
     </div>
+
+    <section class="modal-feedback">
+      <h2 class="visually-hidden">Обратная свзяь</h2>
+      <p class="modal-description">Мы обязательно вам ответим!</p>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="feedback-name">Ваше имя: </label>
+          <input class="feedback-user-name" id="feedback-name" type="text" name="user-name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label class="visually-hidden" for="feedback-email">Ваш email:</label>
+          <input class="feedback-user-email" id="feedback-name" type="text" name="user-email" placeholder="email@example.com">
+        </p>
+        <p>
+          <textarea id="user-text-field" cols="30" rows="5" name="user-text" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button feedback-form-button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </section>
+
+    <script src="js/script.min.js"></script>
   </body>
 </html>
